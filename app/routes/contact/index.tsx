@@ -110,7 +110,7 @@ const ContactPage = () => {
 
         {/* Form Display */}
         <div className="">
-          <img src="../public/contact-image.png" className="size-70 order-1 md:order-2" alt="" />
+          <img src="/contact-image.png" className="size-70 order-1 md:order-2" alt="" />
         </div>
       </div>
     </div>

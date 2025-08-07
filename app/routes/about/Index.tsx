@@ -20,7 +20,7 @@ const AboutPage = () => {
         {/* MIDDLE COLUMN */}
         <div className="w-full p-4 flex items-center justify-center">
           <img 
-          src="../public/images/profile.jpg" 
+          src="/images/profile.jpg" 
           alt=""
           className="size-70 object-cover object-top rounded-full border-4 border-green-600"
            />

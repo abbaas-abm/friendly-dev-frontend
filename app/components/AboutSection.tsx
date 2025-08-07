@@ -9,7 +9,7 @@ const AboutSection = () => {
             </div>
 
             <img 
-            src="../public/welcome-image.png" 
+            src="/welcome-image.png" 
             alt=""
             className="w-[50%] h-[400px] object-contain hidden md:block"
              />

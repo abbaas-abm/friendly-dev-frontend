@@ -20,7 +20,7 @@ const Hero = () => {
                         </button>
                     </Link>
                 </div>
-                <img src="../../public/code-img.png" className="size-44 object-contain" alt="" />
+                <img src="/code-img.png" className="size-44 object-contain" alt="" />
             </div>
 
             {/* RIGHT COLUMN */}
