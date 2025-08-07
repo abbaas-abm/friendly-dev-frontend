@@ -1,5 +1,5 @@
 // import { Form } from "react-router";
-// import type { Route } from "./+types";
+import type { Route } from "./+types/index";
 
 // export async function action({request}: Route.ActionArgs){
 //     const formData = await request.formData();
@@ -31,6 +31,15 @@
 
 //     return {message: "Form submitted succesfully!", data}
 // } 
+
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "Contact | Friendly Dev" },
+    { name: "description", content: "Your freindly developer ready to help!" },
+  ];
+}
+
 
 const ContactPage = () => {
 

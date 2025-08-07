@@ -9,6 +9,15 @@ import { AnimatePresence, motion } from "framer-motion";
 const API_URL = import.meta.env.VITE_API_URL;
 const ROOT_URL = import.meta.env.VITE_STRAPI_URL;
 
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "My Projects" },
+    { name: "description", content: "Your freindly developer ready to help!" },
+  ];
+}
+
+
   export async function loader ({request}: Route.LoaderArgs):Promise<{projects: Project[]}> {
       const req = await fetch(`${API_URL}/projects?populate=*`);
       

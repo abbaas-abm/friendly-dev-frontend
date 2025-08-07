@@ -1,5 +1,15 @@
 import { Link } from "react-router";
 import { FiAlertTriangle } from "react-icons/fi";
+import type { Route } from "./+types/index";
+
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "404 - Page Not Found" },
+    { name: "description", content: "Your freindly developer ready to help!" },
+  ];
+}
+
 
 export default function NotFound() {
   return (

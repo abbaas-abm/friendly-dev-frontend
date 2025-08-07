@@ -7,6 +7,15 @@ import SearchFilter from "~/components/SearchFilter";
 const API_URL = import.meta.env.VITE_API_URL
 const ROOT_URL = import.meta.env.VITE_STRAPI_URL;
 
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "Blog | Friendly Dev" },
+    { name: "description", content: "Your freindly developer ready to help!" },
+  ];
+}
+
+
 export async function loader ({request}: Route.LoaderArgs):Promise<{posts: PostMeta[]}> {
    const req = await fetch(`${API_URL}/posts?populate=image&sort=date:desc`)
 

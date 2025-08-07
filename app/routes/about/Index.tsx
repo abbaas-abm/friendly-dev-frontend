@@ -1,5 +1,14 @@
 import LeftColumnAbout from "~/components/LeftColumnAbout";
 import RightColumnAbout from "~/components/RightColumnAbout";
+import type { Route } from "./+types/index";
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "About Me | Friendly Dev" },
+    { name: "description", content: "Your freindly developer ready to help!" },
+  ];
+}
+
 
 const AboutPage = () => {
   return (
